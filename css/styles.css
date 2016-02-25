@@ -36,7 +36,7 @@
 		}
 
 	#bottomrow {
-		padding: 20px 0 40px 0;
+		padding: 20px 0;
 		text-align: center;
 		font-size: 48px;
 		color: gray;
@@ -90,7 +90,9 @@
 		font-size: 24px
 		}
 	
-	#smlpic1, #smlpic2, #smlpic3 {
+	#smlpic1, 
+	#smlpic2, 
+	#smlpic3 {
 		width: 75%;
 		}
 	
@@ -100,9 +102,15 @@
 	
 	.links {
 	padding-bottom: 20px;
-}
+     }
 	ul li {
 	font-size: 3em;			
 	}
 		
+}
+
+@media screen and (min-width: 994px) {
+.spacing {
+	padding-bottom: 50px;
+	}
 }
