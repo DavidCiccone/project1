@@ -1,60 +1,222 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-        <meta charset="UTF-8">
-     <title>David Ciccone</title>
-    </head>
-    <body>
-    	<div class="container" id="topbar">
-    		<div class="row"><div class="col-md-6" ><img id="logo" src="images/logo.jpg" alt="logo"></div>
-    		<div class="col-md-6" id="headertext"><h1>David Ciccone</h1><h5>Developer, Designer, Creative</h5></div>
-		</div></div>
-<div class="container">
-<div class="line"></div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12"><img id="mainpic" src="https://unsplash.it/1140/600" alt="main image"></div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>David Ciccone</title>
+</head>
+
+<body>
+    <div class="container" id="topbar">
+        <div class="row">
+            <div class="col-md-6"><img id="logo" src="images/logo.jpg" alt="logo">
+            </div>
+            <div class="col-md-6" id="headertext">
+                <h1>David Ciccone</h1>
+                <h5>Developer, Designer, Creative</h5>
+            </div>
+        </div>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12" id="featured"><p>Featured Work</p></div>
-    </div>    
-</div>
-<div class="container">
-    <div class="row" id="bottomrow">
-      <div class="col-md-12 spacing">
-        <div class="col-md-4"><img id="smlpic1" src="https://unsplash.it/250/200" alt="project 1"><p class="titles">Neighborhood Map Project</p><p class="links">http://github.com/DavidCiccone/project1</p></div>
-        <div class="col-md-4"><img id="smlpic2" src="https://unsplash.it/250/200" alt="project 2"><p class="titles">Project 2</p><p class="links">http://github.com/DavidCiccone/project2</p></div>
-        <div class="col-md-4"><img id="smlpic3" src="https://unsplash.it/250/200" alt="project 3"><p class="titles">Project 3</p><p class="links">http://github.com/DavidCiccone/project3</p></div>
-      </div>
-      <div class="col-md-12">
-        <div class="col-md-4"><img id="smlpic3" src="https://unsplash.it/250/200" alt="project 3"><p class="titles">Project 4</p><p class="links">http://github.com/DavidCiccone/project4</p></div>
-        <div class="col-md-4"><img id="smlpic3" src="https://unsplash.it/250/200" alt="project 3"><p class="titles">Project 5</p><p class="links">http://github.com/DavidCiccone/project5</p></div>
-        <div class="col-md-4"><img id="smlpic3" src="https://unsplash.it/250/200" alt="project 3"><p class="titles">Project 6</p><p class="links">http://github.com/DavidCiccone/project6</p></div>
-      </div>    
+    <div class="container">
+        <div class="line"></div>
     </div>
-</div>
-<footer>
-<div class="container">
-<div class="line"></div>
-</div>
-<div class="container">
-    <div class="row">
-    <div class="col-md-12" id="social">
-<ul class="social">
-  <li class="brandico-github"></li>
-  <li class="brandico-linkedin-rect"></li>
-  <li class="brandico-twitter-bird"></li>
-</ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><img id="mainpic" src="https://unsplash.it/1140/400" alt="main image">
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="featured">
+                <p>Featured Work</p>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="row" id="bottomrow">
+            <div class="col-md-12 spacing">
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal1" class="smlpic" src="images/neighborhoodmodal.jpg" alt="project 1">
+                    <p class="titles">Neighborhood Map Project</p><a class="links" href="davidciccone.github.io/project-5/">davidciccone.github.io/project-5/</a>
+                </div>
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal2" class="smlpic" src="images/SOMBWpic.jpg" alt="project 2">
+                    <p class="titles">South of Main Block Watch</p><a class="links" href="http://www.sombw.org">http://www.sombw.org</a>
+                </div>
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal3" class="smlpic" src="images/bugattachpic.jpg" alt="project 3">
+                    <p class="titles">Bug Attack
+                        <br>(Arcade Game)</p><a class="links" href="http://davidciccone.github.io/ArcadeGame">davidciccone.github.io/ArcadeGame</a>
+                </div>
+            </div>
+            <div class="col-md-12">
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal4" class="smlpic" src="images/pizzapic.jpg" alt="project 4">
+                    <p class="titles">Website Optimization</p><a class="links" href="http://davidciccone.github.io/frontend-nanodegree-mobile-portfolio/">davidciccone.github.io/frontend-nanodegree-mobile-portfolio/</a>
+                </div>
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal5" class="smlpic" src="images/portpicture.jpg" alt="project 5">
+                    <p class="titles">Project 5</p><a class="links" href="http://davidciccone.github.io/frontend-nanodegree-resume/">http://davidciccone.github.io/frontend-nanodegree-resume/</a>
+                </div>
+
+                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal6" class="smlpic" src="images/feedreaderpicture.jpg" alt="project 6">
+                    <p class="titles">Feed Reader Testing</p><a href="http://davidciccone.github.io/project-6/" class="links">davidciccone.github.io/project-6/</a>
+                </div>
+            </div>
+            <!-- Modal1 -->
+            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title">Neighborhood Map Project</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/neighborhoodmodal.jpg" alt="project 1">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/project-5">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/project-5/">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            A single-page web application, built using the Knockout framework, that displays a Google Map that includes popular CrossFit gyms of Columbus Ohio. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal2 -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title">South of Main Block Watch</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/SOMBWpic.jpg" alt="project 2">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/SOMBW-site">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://www.sombw.org">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            A single-page website created for a local non-profit organization using Bootstrap 3, the Google Maps API, HTML, CSS, and the Bootstrap 3 framework. The page is fully responsive and works on mobile, tablet, and desktop browsers.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal3 -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title">Bug Attack (Arcade Game)</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/bugattachpic.jpg" alt="project 3">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/ArcadeGame">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/ArcadeGame/">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal4 -->
+            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title">Website Optimization</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/pizzapic.jpg" alt="project 4">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/frontend-nanodegree-mobile-portfolio">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/frontend-nanodegree-mobile-portfolio/">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal5 -->
+            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title">Interactive Resume</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/portpicture.jpg" alt="project 5">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/frontend-nanodegree-resume">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/frontend-nanodegree-resume/">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal6 -->
+            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+
+                            <h2 class="modal-title" id="myModalLabel">Feed Reader Testing</h2>
+                        </div>
+                        <div class="modal-body">
+                            <img class="modalpic" src="images/feedreaderpicture.jpg" alt="project 6">
+                            <div>
+                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/project-6">Source Code</a>
+                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/project-6/">View Project</a>
+                            </div>
+                        </div>
+                        <div class="modal-footer modalfooter">
+                            Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <footer>
+        <div class="container">
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="social">
+                    <ul class="social linkstylenone">
+                        <li>
+                            <a class="linkstylenone brandico-github" href="https://github.com/davidciccone"></a>
+                        </li>
+                        <li>
+                            <a class="linkstylenone brandico-linkedin-rect" href="https://www.linkedin.com/in/david-ciccone-55a5a415"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
-    </body>
+</body>
+
 </html>

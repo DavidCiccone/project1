@@ -1,116 +1,113 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
-
 /* brandico */
+
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+    font-family: 'brandico', sans-serif;
 }
-
 * {
-	font-family: 'Lato', sans-serif;
-		}
-
-	#topbar {
-		padding-bottom: 10px;
-		text-transform: uppercase;
-		font-weight:100;
-		}
-
-	#headertext { 
-		text-align: right;
-		}
-
-	.line {
-		border-bottom-color: #BCBBBB;
-		border-bottom-style:solid;
-		padding-top: 4px;
-		border-width: 4px;
-		}
-
-	#logo {
-		padding-top: 10px;
-		}
-
-	#mainpic {
-    	padding: 20px 0 30px 0;
-    	width: 100%;
-		}
-
-	#bottomrow {
-		padding: 20px 0;
-		text-align: center;
-		font-size: 48px;
-		color: gray;
-		}
-
-	#smlpic1, #smlpic2, #smlpic3 {
-		width: 100%;
-		border-radius: 15px;
-		}
-	
-	.links {
-		font-size: 16px;
-		}
-	
-	#featured {
-		color: #BCBBBB;
-		font-size: 36px;
-		margin: 0 0 -25px 0;
-		}
-	
-	.titles {
-		margin-bottom: -5px;
-		}
-
-	ul li {
-		display: inline;
-		font-size: 4em;
-		padding: 0 5%;
-		margin-left: auto;
-    	margin-right: auto;
-			}
-
-	footer {
-		text-align: center;
-	}
-
-@media screen and (max-width: 994px) {
-	#topbar, #logo { 
-		display: block;
-    	margin-left: auto;
-    	margin-right: auto;
-		}
-	
-	#headertext, #featured {
-		text-align: center;
-		margin-left: auto;
-    	margin-right: auto;
-			}
-	
-	.titles { 
-		font-size: 24px
-		}
-	
-	#smlpic1, 
-	#smlpic2, 
-	#smlpic3 {
-		width: 75%;
-		}
-	
-	#mainpic {
-		display: none;
-		}
-	
-	.links {
-	padding-bottom: 20px;
-     }
-	ul li {
-	font-size: 3em;			
-	}
-		
+    font-family: 'Lato', sans-serif;
 }
-
+#topbar {
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#headertext {
+    text-align: right;
+}
+.line {
+    border-bottom-color: #BCBBBB;
+    border-bottom-style: solid;
+    padding-top: 4px;
+    border-width: 4px;
+}
+#logo {
+    padding-top: 10px;
+}
+#mainpic {
+    padding: 20px 0 30px 0;
+    width: 100%;
+}
+#bottomrow {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 32px;
+    color: gray;
+}
+.smlpic {
+    width: 100%;
+    border-radius: 15px;
+    border: solid 3px;
+}
+.links,
+.links:hover,
+.links:visited,
+.links:link,
+.links:active {
+    font-size: 16px;
+    color: lightgray;
+    text-decoration: none;
+}
+#featured {
+    color: #BCBBBB;
+    font-size: 36px;
+    margin: 0 0 -25px 0;
+}
+.titles {
+    margin-bottom: -5px;
+}
+ul li {
+    display: inline;
+    font-size: 4em;
+    padding: 0 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    text-align: center;
+}
+@media screen and (max-width: 994px) {
+    #topbar,
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #headertext,
+    #featured {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #mainpic {
+        display: none;
+    }
+    .links {
+        padding-bottom: 20px;
+    }
+    ul li {
+        font-size: 3em;
+    }
+}
 @media screen and (min-width: 994px) {
-.spacing {
-	padding-bottom: 50px;
-	}
+    .spacing {
+        padding-bottom: 50px;
+    }
+}
+.modalfooter {
+    font-size: 16px;
+    text-align: left;
+}
+.modalpic {
+    border-radius: 5px;
+    border: solid 2px;
+    margin: 7px 0;
+}
+.linkstylenone,
+.linkstylenone:hover,
+.linkstylenone:visited,
+.linkstylenone:link,
+.linkstylenone:active {
+    text-decoration: none;
+    color: #333;
 }
