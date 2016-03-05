@@ -38,6 +38,7 @@
     width: 100%;
     border-radius: 15px;
     border: solid 3px;
+    cursor: pointer;
 }
 .links,
 .links:hover,
