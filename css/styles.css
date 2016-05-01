@@ -1,9 +1,14 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 /* brandico */
-
 [class*="brandico-"]:before {
     font-family: 'brandico', sans-serif;
 }
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
 * {
     font-family: 'Lato', sans-serif;
 }
@@ -15,12 +20,7 @@
 #headertext {
     text-align: right;
 }
-.line {
-    border-bottom-color: #BCBBBB;
-    border-bottom-style: solid;
-    padding-top: 4px;
-    border-width: 4px;
-}
+
 #logo {
     padding-top: 10px;
 }
@@ -50,7 +50,7 @@
     text-decoration: none;
 }
 #featured {
-    color: #BCBBBB;
+   
     font-size: 36px;
     margin: 0 0 -25px 0;
 }
@@ -67,6 +67,25 @@ ul li {
 footer {
     text-align: center;
 }
+.about h1, #featured h1 {
+    text-align: center;
+    margin: .75em 0;  
+}
+.about {
+    background-color: lightblue;
+}
+.aboutme{
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+.contact {
+    background-color: lightblue;
+    text-align: center;
+}
+.contact h1 {
+    margin: 1em 0 .5em 1em;
+}
+
 @media screen and (max-width: 994px) {
     #topbar,
     #logo {
