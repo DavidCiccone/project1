@@ -77,15 +77,21 @@ footer {
 .aboutme{
     font-size: 20px;
     margin-bottom: 2em;
+        
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 15px 25px;
+}
 }
 .contact {
-    background-color: lightblue;
     text-align: center;
 }
 .contact h1 {
     margin: 1em 0 .5em 1em;
 }
-
+section.contact {
+    background-color: lightblue;
+}
 @media screen and (max-width: 994px) {
     #topbar,
     #logo {
