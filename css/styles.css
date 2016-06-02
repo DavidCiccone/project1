@@ -72,25 +72,50 @@ footer {
     margin: .75em 0;  
 }
 .about {
-    background-color: lightblue;
+    background:
+      linear-gradient(
+      rgba(153, 204, 255, 0.8), 
+      rgba(153, 204, 255, 0.8)
+    ),
+    
+    url(https://unsplash.it/1903/341);
+    font-family: 'Lato', sans-serif;
+  
+
 }
 .aboutme{
-    font-size: 20px;
-    margin-bottom: 2em;
-        
-    border-top: 1px solid;
-    border-bottom: 1px solid;
+    font-size: 24px;
+    margin-bottom: 2em;        
+  
     padding: 15px 25px;
+    text-indent: 4em;
+    background-color: rgba(255, 255, 255, 0.5);
+  
+    
+
 }
+
+
+.font{
+    font-family: 'Lato', sans-serif;
+ 
 }
+
 .contact {
     text-align: center;
+
 }
 .contact h1 {
     margin: 1em 0 .5em 1em;
 }
 section.contact {
-    background-color: lightblue;
+     background:
+      linear-gradient(
+      rgba(153, 204, 255, 0.8), 
+      rgba(153, 204, 255, 0.8)
+    ),
+    
+    url(https://unsplash.it/1903/184);
 }
 @media screen and (max-width: 994px) {
     #topbar,
