@@ -40,6 +40,29 @@
     border: solid 3px;
     cursor: pointer;
 }
+
+.smlpic, .smlicon {
+  display: inline-block;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+ 
+}
+
+.smlpic:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.smlicon:hover, 
+.smlicon:focus, 
+.smlicon:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 .links,
 .links:hover,
 .links:visited,
