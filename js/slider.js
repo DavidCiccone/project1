@@ -1,0 +1,1 @@
+$(".aboutme").delay(850).animate({"left": "-=1550px"}, 800);

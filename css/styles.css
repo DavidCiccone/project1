@@ -107,17 +107,15 @@ footer {
 
 }
 .aboutme{
+    position: relative;
     font-size: 24px;
     margin-bottom: 2em;        
-  
     padding: 15px 25px;
     text-indent: 4em;
     background-color: rgba(255, 255, 255, 0.5);
-  
-    
-
+    left: 1550px;
+    max-width:1120px;
 }
-
 
 .font{
     font-family: 'Lato', sans-serif;
@@ -126,7 +124,6 @@ footer {
 
 .contact {
     text-align: center;
-
 }
 .contact h1 {
     margin: 1em 0 .5em 1em;
