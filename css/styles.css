@@ -31,7 +31,7 @@
 #bottomrow {
     padding: 20px 0;
     text-align: center;
-    font-size: 32px;
+    
     color: gray;
 }
 .smlpic {
@@ -79,6 +79,7 @@
 }
 .titles {
     margin-bottom: -5px;
+    font-size: 32px;
 }
 ul li {
     display: inline;
@@ -155,13 +156,17 @@ section.contact {
         display: none;
     }
     .links {
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     ul li {
         font-size: 3em;
     }
 }
 @media screen and (min-width: 994px) {
+    .float {
+        float: right;
+    }
+
     .spacing {
         padding-bottom: 50px;
     }
