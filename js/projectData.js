@@ -59,7 +59,7 @@ var projects = {
 						   description: "Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS."
 	                      },
 	                      { dataTarget: "#myModal6",
-						    image: "images/feedreaderpicture.jpg",
+						    image: "images/feedreaderpicture2.jpg",
 						    altTag: "project 6",
 						    title: "Feed Reader Testing",
 						    link: "http://davidciccone.github.io/project-6/",
