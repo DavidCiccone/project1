@@ -72,7 +72,7 @@ var projects = {
 	                  ]
 	         },
 	          { items: [  { dataTarget: "#myModal7",
-						   image: "images/weatherapppic.jpg",
+						   image: "images/weatherapppic2.jpg",
 						   altTag: "project 7",
 						   title: "Weather App",
 						   link: "https://davidciccone.github.io/Weather-app/",
