@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -10,9 +9,8 @@
     <title>David Ciccone</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
-    <div class="container" id="topbar">
+    <header class="container" id="topbar">
         <div class="row">
             <div class="col-md-6"><img id="logo" src="images/logo.jpg" alt="logo">
             </div>
@@ -25,18 +23,17 @@
                 </div>
             </div>
         </div>
-    </div>
- 
-<section class="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1><span class="font">About Me</span></h1>
-                <p class="aboutme">Hi!  My name is David and this is my portfolio site.  I have a passion for web development and recently completed the Udacity Front-End Web Development Nano Degree while also working full time.  This was a great experience that allowed me build my portfolio and become more confident in my skill set as a developer.  Building, creating, and problem solving are things I love and doing work as a front end developer allows me to do all three.  I also love how there is always more to learn.</p>                     
+    </header> 
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1><span class="font">About Me</span></h1>
+                    <p class="aboutme">Hi!  My name is David and this is my portfolio site.  I have a passion for web development and recently completed the Udacity Front-End Web Development Nano Degree while also working full time.  This was a great experience that allowed me build my portfolio and become more confident in my skill set as a developer.  Building, creating, and problem solving are things I love and doing work as a front end developer allows me to do all three.  I also love how there is always more to learn.</p>                     
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-md-12" id="featured">
@@ -45,217 +42,42 @@
         </div>
     </div>
     <div class="container">
-        <div class="row" id="bottomrow">
-            <div class="col-md-12 spacing">
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal1" class="smlpic" src="images/neighborhoodmodal.jpg" alt="project 1">
-                    <p class="titles">Neighborhood Map Project</p><a class="links" href="davidciccone.github.io/project-5/">davidciccone.github.io/project-5/</a>
+    <!-- ko foreach: project -->
+        <div class="row" id="bottomrow">    
+            <div class="col-md-12 spacing"> 
+                <!-- ko foreach: items -->
+                <div class="col-md-4"><img data-toggle="modal" data-bind="attr: { src: image, 'data-target': dataTarget, alt: altTag }" class="smlpic">
+                    <p class="titles" data-bind="text: title"></p><a class="links" data-bind="attr: { href: link }, text: linkText"></a>
                 </div>
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal2" class="smlpic" src="images/SOMBWpic.jpg" alt="project 2">
-                    <p class="titles">South of Main Block Watch</p><a class="links" href="http://www.sombw.org">http://www.sombw.org</a>
-                </div>
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal3" class="smlpic" src="images/bugattachpic.jpg" alt="project 3">
-                    <p class="titles">Bug Attack
-                        <br>(Arcade Game)</p><a class="links" href="http://davidciccone.github.io/ArcadeGame">davidciccone.github.io/ArcadeGame</a>
-                </div>
-            </div>
-            <div class="col-md-12 spacing">
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal4" class="smlpic" src="images/pizzapic.jpg" alt="project 4">
-                    <p class="titles">Website Optimization</p><a class="links" href="http://davidciccone.github.io/frontend-nanodegree-mobile-portfolio/">davidciccone.github.io/frontend-nanodegree-mobile-portfolio/</a>
-                </div>
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal5" class="smlpic" src="images/portpicture.jpg" alt="project 5">
-                    <p class="titles">Interactive Resume</p><a class="links" href="http://davidciccone.github.io/frontend-nanodegree-resume/">http://davidciccone.github.io/frontend-nanodegree-resume/</a>
-                </div>
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal6" class="smlpic" src="images/feedreaderpicture.JPG" alt="project 6">
-                    <p class="titles">Feed Reader Testing</p><a href="http://davidciccone.github.io/project-6/" class="links">davidciccone.github.io/project-6/</a>
-                </div>
-            </div>
-            <div class="col-md-12">
-
-                <div class="col-md-4"><img data-toggle="modal" data-target="#myModal7" class="smlpic" src="images/weatherapppic.jpg" alt="project 7">
-                    <p class="titles">Weather App</p><a class="links" href="https://davidciccone.github.io/Weather-app/">davidciccone.github.io/Weather-app/</a>
-                </div>
-                 <div class="col-md-4"><img data-toggle="modal" data-target="#myModal8" class="smlpic" src="images/shippingcalcimg.jpg" alt="project 7">
-                    <p class="titles">Shipping Calculator</p><a class="links" href="https://github.com/DavidCiccone/ShippingCalc">davidciccone.github.io/ShippingCalc/</a>
-                </div>  
-
-             
-            </div>
-         
-            <!-- Modal1 -->
-            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+               <!-- /ko -->
+          </div>          
+    </div>   
+    <!-- /ko -->   
+            <!-- Modal -->
+            <!-- ko foreach: project -->
+            <!-- ko foreach: items -->
+            <div class="modal fade text-center" data-bind="attr: { id: id }" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-
-                            <h2 class="modal-title">Neighborhood Map Project</h2>
+                            <h2 class="modal-title" data-bind="text: title"></h2>
                         </div>
                         <div class="modal-body">
-                            <img class="modalpic" src="images/neighborhoodmodal.jpg" alt="project 1">
+                            <img class="modalpic" data-bind="attr: { src: image, alt: altTag }">
                             <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/project-5">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/project-5/">View Project</a>
+                                <a class="btn btn-primary btn-lg" data-bind="attr: { href: sourceCodeButton }">Source Code</a>
+                                <a class="btn btn-primary btn-lg" data-bind="attr: { href: viewProjectButton }">View Project</a>
                             </div>
                         </div>
-                        <div class="modal-footer modalfooter">
-                            A single-page web application, built using the Knockout framework, that displays a Google Map that includes popular CrossFit gyms of Columbus Ohio. Users can search all included landmarks and, when selected, additional information about a landmark is presented from the Yelp API.
+                        <div class="modal-footer modalfooter" data-bind="text: description">
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal2 -->
-            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <h2 class="modal-title">South of Main Block Watch</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/SOMBWpic.jpg" alt="project 2">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/SOMBW-site">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/SOMBW-site/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            A single-page website created for a local non-profit organization using Bootstrap 3, the Google Maps API, HTML, CSS, and the Bootstrap 3 framework. The page is fully responsive and works on mobile, tablet, and desktop browsers.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal3 -->
-            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <h2 class="modal-title">Bug Attack (Arcade Game)</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/bugattachpic.jpg" alt="project 3">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/ArcadeGame">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/ArcadeGame/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal4 -->
-            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <h2 class="modal-title">Website Optimization</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/pizzapic.jpg" alt="project 4">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/frontend-nanodegree-mobile-portfolio">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/frontend-nanodegree-mobile-portfolio/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            Optimized an inefficient web application's JavaScript, CSS and assets delivery, ensuring it runs at 60fps and achieves a PageSpeed score of at least 90.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal5 -->
-            <div class="modal fade" id="myModal5" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <h2 class="modal-title">Interactive Resume</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/portpicture.jpg" alt="project 5">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/frontend-nanodegree-resume">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/frontend-nanodegree-resume/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            Using jQuery, developed an interactive resume application that reads all data from a JSON file and then dynamically modifies the DOM to display the information. Further customized the project by personalizing the design using CSS.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal6 -->
-            <div class="modal fade" id="myModal6" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-
-                            <h2 class="modal-title" id="myModalLabel">Feed Reader Testing</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/feedreaderpicture.JPG" alt="project 6">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/project-6">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="http://davidciccone.github.io/project-6/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            Wrote comprehensive unit tests, using the Jasmine testing framework, for an RSS Feed Reader application that uses Google's RSS API.
-                        </div>
-                    </div>
-                </div>
-            </div>
-               <!-- Modal7 -->
-            <div class="modal fade" id="myModal7" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title" id="myModalLabel">Weather App</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/weatherapppic.jpg" alt="project 7">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/Weather-app">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="https://davidciccone.github.io/Weather-app/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            A simple weather app that shows the conditions of the weather based on the users physical location. Uses the Dark Stormes API and the Skycons icon set.
-                        </div>
-                    </div>
-                </div>
-            </div>
-                 <!-- Modal8 -->
-            <div class="modal fade" id="myModal8" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title" id="myModalLabel">Shipping Calculator</h2>
-                        </div>
-                        <div class="modal-body">
-                            <img class="modalpic" src="images/shippingcalcimg.jpg" alt="project 8">
-                            <div>
-                                <a class="btn btn-primary btn-lg" href="https://github.com/DavidCiccone/ShippingCalc">Source Code</a>
-                                <a class="btn btn-primary btn-lg" href="https://davidciccone.github.io/ShippingCalc/">View Project</a>
-                            </div>
-                        </div>
-                        <div class="modal-footer modalfooter">
-                            A shipping app that utilizes the USPS API.  Built on HTML5 BOILERPLATE template  Written with JavaScript and JQuery
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- /ko -->
+            <!-- /ko -->        
     </div>
-    <footer>
+    <footer class="text-center">
       <section class="contact">
         <div class="container">
             <div class="line"><h1>Contact</h1></div>
@@ -280,8 +102,9 @@
       </section>
     </footer>
     <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script> 
+    <script type="text/javascript" src="js/projectData.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/slider.js" defer></script>
 </body>
-
 </html>
