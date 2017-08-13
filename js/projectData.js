@@ -92,6 +92,17 @@ var projects = {
 						   sourceCodeButton: "https://github.com/DavidCiccone/ShippingCalc",
 						   viewProjectButton: "https://davidciccone.github.io/ShippingCalc/",
 						   description: "A shipping app that utilizes the USPS API.  Built on HTML5 BOILERPLATE template  Written with JavaScript and JQuery."
+	                      },
+	                      { dataTarget: "#myModal9",
+						   image: "images/stupidsimple.jpg",
+						   altTag: "project 9",
+						   title: "Website Mockup",
+						   link: "https://davidciccone.github.io/StupidSimple/",
+						   linkText: "davidciccone.github.io/StupidSimple/",
+						   id: "myModal9",
+						   sourceCodeButton: "https://github.com/DavidCiccone/StupidSimple",
+						   viewProjectButton: "https://davidciccone.github.io/StupidSimple/",
+						   description: "Mockup of a website built from a given PSD design.  Design credit to Peter Finlan.  https://dribbble.com/shots/1314681-Freebie-PSD-Perth-A-Free-Flat-Web-Design"
 	                      }
 	                   ]
 	           }
