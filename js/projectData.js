@@ -36,6 +36,7 @@ var projects = {
 	                     }
 	                  ]
 	         },
+			 /*--
 	         { items: [  { dataTarget: "#myModal4",
 						   image: "images/pizzapic.jpg",
 						   altTag: "project 4",
@@ -71,6 +72,7 @@ var projects = {
 	                       }
 	                  ]
 	         },
+			 --*/
 	          { items: [  { dataTarget: "#myModal7",
 						   image: "images/weatherapppic.jpg",
 						   altTag: "project 7",
@@ -82,6 +84,7 @@ var projects = {
 						   viewProjectButton: "https://davidciccone.github.io/Weather-app/",
 						   description: "A simple weather app that shows the conditions of the weather based on the users physical location. Uses the Dark Stormes API and the Skycons icon set."
 	                      },
+						  /*--
 	                      { dataTarget: "#myModal8",
 						   image: "images/shippingcalcimg.jpg",
 						   altTag: "project 8",
@@ -93,6 +96,7 @@ var projects = {
 						   viewProjectButton: "https://davidciccone.github.io/ShippingCalc/",
 						   description: "A shipping app that utilizes the USPS API.  Built on HTML5 BOILERPLATE template  Written with JavaScript and JQuery."
 	                      },
+						  --*/
 	                      { dataTarget: "#myModal9",
 						   image: "images/stupidsimple.jpg",
 						   altTag: "project 9",
