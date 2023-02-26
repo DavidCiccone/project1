@@ -1,5 +1,5 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://weloveiconfonts.com/api/?family=brandico);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 /* brandico */
 [class*="brandico-"]:before {
     font-family: 'brandico', sans-serif;
@@ -199,8 +199,9 @@ section.contact {
     .navbar-parent-styles {
         position: fixed;
         right: 10px;
-        top: 201px;
+        top: 159px;
         width: 12%;
+        display: none;
     }
     .navbar-inverse {
     background-color: transparent;
@@ -237,7 +238,7 @@ section.contact {
     }
 
     .navbar-inverse {
-        background-color: rgba(157, 157, 157, .5) !important;
+        background-color: rgba(157, 157, 157, 1) !important;
     }
 
     ul {
